@@ -1,0 +1,153 @@
+.side-cart {
+  &-container {
+    transition: 0.5s all;
+    transform: translateX(100%);
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: rgba($color: #000000, $alpha: 0.8);
+    .total,
+    strong {
+      font-size: 2rem;
+    }
+    .top-content {
+      margin-bottom: 1rem;
+    }
+    .close-btn {
+      font-size: 6rem;
+      cursor: pointer;
+      // width: 10%;
+    }
+  }
+  &-content {
+    will-change: transform;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.5s 0.3s all;
+    height: 100%;
+    width: 30%;
+    background: #fff;
+    margin-left: auto;
+    padding: 2rem 1rem;
+    transform: translateX(100%);
+    @media (max-width: 1368px) {
+      width: 40%;
+    }
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 568px) {
+      width: 100%;
+    }
+  }
+  &-item {
+    height: 15rem;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    h2 {
+      @media (max-width: 568px) {
+        font-size: 1.4rem;
+      }
+    }
+    .close {
+      position: absolute;
+      top: 2%;
+      right: 3%;
+      cursor: pointer;
+      user-select: none;
+    }
+    &-content {
+      width: calc(100% - 15rem);
+      table {
+        width: 100%;
+        tr {
+          width: 100%;
+          td {
+            &:nth-child(even) {
+              text-align: right;
+            }
+          }
+        }
+      }
+      &-top {
+        width: 100%;
+      }
+    }
+    h2 {
+      margin-right: 2rem;
+    }
+    img {
+      width: 15rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &-item-container {
+    overflow-y: auto;
+    height: 87%;
+    width: 100%;
+
+    // background: rgb(236, 241, 241);
+    margin-bottom: 1rem;
+  }
+}
+
+.addDecrease {
+  max-width: 10rem;
+  width: 45%;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  background: transparent;
+  border: 1px solid transparent;
+  margin: 1rem 0;
+  color: rgb(255, 255, 255);
+  margin-right: 0.4rem;
+  transition: 0.3s all;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.add {
+    background: rgb(0, 0, 0);
+  }
+
+  &.remove {
+    // background: rgb(43, 232, 245);
+    border: 2px solid rgb(1, 8, 10);
+    color: rgb(1, 8, 10);
+  }
+}
+.empty-png {
+  width: 90%;
+  margin: auto auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    animation: scale2 10s ease infinite forwards;
+  }
+}
+
+@keyframes scale2 {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

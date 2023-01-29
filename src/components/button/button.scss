@@ -1,0 +1,27 @@
+.main-btn {
+  background: rgba(16, 114, 16, 0.726);
+  border: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    opacity: 0.9;
+  }
+  &.black {
+    background: #000000;
+  }
+  &.large {
+    padding: 3rem;
+    font-size: 2.5rem;
+    height: 6rem;
+  }
+  &.disable {
+    opacity: 0.5;
+
+  }
+}

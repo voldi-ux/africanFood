@@ -1,0 +1,56 @@
+header {
+    width:100vw;
+    margin-top: 5rem;
+    .slide-item {
+        background-attachment: fixed;
+        height: 75vh;
+        padding: 0 0 0 10rem;
+         @media (max-width:750px) {
+          padding: 0 0 0 7rem;
+          background-position: 50% 20%;
+        }
+        h1 {
+            font-size: 7rem;
+            color: rgb(255, 255, 255);
+            width: 50%;
+            word-break: break-word;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @media (max-width:750px) {
+                font-size: 6rem;
+                width: 80%;
+            }
+            @media (max-width:450px) {
+                font-size: 5rem;
+                width: 90%;
+            }
+        }
+        button {
+            transition: .3s all;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            color: rgb(255, 255, 255);
+            align-self: flex-start;
+            padding: 2rem 3rem;
+            font-size: 3rem;
+            font-weight: 700;
+            outline: none;
+            background: transparent;
+            border: 2px solid rgba(214, 250, 8, 0.726);;
+            
+            
+            @media (max-width:750px) {
+                font-size: 2rem;
+                padding: 1rem 2rem;
+            }
+            &:hover {
+                border: 2px solid transparent;
+                background:  rgba(66, 211, 66, 0.726);;
+           
+            }
+        }
+    }
+}

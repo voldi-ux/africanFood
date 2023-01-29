@@ -1,0 +1,51 @@
+.show-case {
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+.addDecrease-btn {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  background: transparent;
+  border: 1px solid transparent;
+  margin: 1rem 0;
+  color: rgb(255, 255, 255);
+  margin-right: 0.4rem;
+  transition: .3s all;
+  &:hover {
+        opacity: 0.9;
+      }
+
+  &.add {
+    background: rgb(0, 0, 0);
+  }
+
+  &.remove {
+
+      //  background: rgb(43, 232, 245);
+    border: 2px solid rgb(1, 8, 10);
+    color:rgb(1, 8, 10);
+  }
+}
+
+.modal-button {
+  transition: .3s all;
+  background: rgb(243, 188, 9);
+  border: none;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1.7rem;
+  &:hover {
+        opacity: 0.9;
+      }
+}

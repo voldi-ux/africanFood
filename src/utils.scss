@@ -1,0 +1,81 @@
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: #343a40;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.6rem;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+// * {
+//   border: 1px solid #f00 !important;
+// }
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: none !important;
+}
+
+//aligning
+.a-hz {
+  display: flex;
+}
+.a-center {
+  align-items: center;
+}
+.jc {
+  justify-content: center;
+}
+.flex {
+  display: flex;
+}
+
+.a-cl {
+  flex-direction: column;
+}
+.spa {
+  justify-content: space-around !important;
+}
+.spb {
+  justify-content: space-between;
+}
+.a-vt {
+}
+
+//spacing
+.pd-1 {
+  padding: 1rem;
+}
+
+.pd-2 {
+  padding: 2rem;
+}
+.pd-3 {
+  padding: 3rem;
+}
+.pd-4 {
+  padding: 4rem;
+}
+
+//width and height
+.fl {
+  width: 100%;
+}
