@@ -1,5 +1,6 @@
 html {
   font-size: 62.5% !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,9 +17,7 @@ body {
   user-select: none;
 }
 
-// * {
-//   border: 1px solid #f00 !important;
-// }
+
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,

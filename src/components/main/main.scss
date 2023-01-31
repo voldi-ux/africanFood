@@ -1,9 +1,14 @@
+/** @format */
+
 main {
   background-color: rgba(16, 114, 16, 0.726);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   padding: 4rem 6rem;
   @media (max-width: 768px) {
-    padding: 4rem 3rem;
+    padding: 4rem 1rem;
   }
   @media (max-width: 450px) {
     padding: 4rem 1rem;
@@ -17,7 +22,6 @@ main {
     word-break: break-word;
     color: #fff;
 
-
     @media (max-width: 750px) {
       font-size: 6rem;
       width: 100%;
@@ -25,12 +29,31 @@ main {
   }
 }
 
-
-
 .main-products {
-   display: grid;
-   grid-template-columns:  auto auto auto auto auto;
-   gap: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  max-width: 1366px;
+}
+
+@media (max-width: 1080px) {
+  .main-products {
+      max-width: 1080px;
+    grid-template-columns: auto auto auto;
+   
+  }
+}
+@media (max-width: 760px) {
+  .main-products {
+    max-width: 1060px;
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 600px) {
+  .main-products {
+      max-width: 600px;
+    grid-template-columns: auto;
+  }
 }
 
 .main-content {
@@ -40,6 +63,7 @@ main {
 .main-alert {
   // border: 1px solid rgb(238, 30, 30);
   padding: 1rem;
+  width: 100%;
   color: rgba(243, 51, 51, 0.726);
   background-color: #fff;
   font-size: 1.7rem;
@@ -47,6 +71,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border-radius: 1rem;
   img {
     width: 4rem;
     height: 4rem;

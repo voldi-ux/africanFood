@@ -8,7 +8,7 @@ const CheckOutPage = () => {
     <div id="checkout-container">
       <NavBar2 />
       <div className="text-center my-5">
-        <h1>YOU HAVE 7 ITEMS IN YOUR CART</h1>
+        <h1>YOU HAVE ARE CHECKING OUT NOW</h1>
       </div>
       <CheckOut />
     </div>
