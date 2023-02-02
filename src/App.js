@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CheckOutPage from "./pages/checkout/checkoutPage";
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
   return (
     //process.env.P... will contain the base url
     // github pages server will set it to /africanFood

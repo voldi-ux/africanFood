@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect} from "react";
 import CheckOut from "../../components/checkout/checkout";
 import "./checkoutPage.scss";
 import NavBar2 from '../../components/navBar/navBar-2'
 const CheckOutPage = () => {
+  useEffect(() => {
+    const ele = document.querySelector("#checkout-container");
+    ele.scrollIntoView();
+   }, []);
 
   return (
     <div id="checkout-container">

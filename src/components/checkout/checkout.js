@@ -20,10 +20,10 @@ const CheckOut = () => {
     address1: "",
     address2: ""
   });
+  const [invalidForm, setInvalidForm] = useState(false);
 
   const dfees = 25; // delivery fees
   const orderDetails = formatData(cartItems, formData, subTotal, dfees, delivering);
-
 
   const handleChange = (name, value) => {
     setFormData((prevState) => {
@@ -37,7 +37,7 @@ const CheckOut = () => {
   };
 
   if (cartItems.length <= 0) {
-    window.location.assign("/foods");
+    window.location.assign("/");
   }
 
   return (
@@ -53,6 +53,7 @@ const CheckOut = () => {
               No delivery
             </button>
           </div>
+          {invalidForm ? <h3 className="invalid-form-content">At least one of the form fields is invalid</h3> : false}
           <Form>
             <Form.Group controlId="formGridEmail">
               <Form.Label>Email</Form.Label>
@@ -63,6 +64,7 @@ const CheckOut = () => {
                 onChange={(e) => {
                   handleChange("email", e.target.value);
                 }}
+                isInvalid={invalidForm}
               />
             </Form.Group>
 
@@ -76,6 +78,7 @@ const CheckOut = () => {
                 onChange={(e) => {
                   handleChange("number", e.target.value);
                 }}
+                isInvalid={invalidForm}
               />
             </Form.Group>
 
@@ -87,6 +90,7 @@ const CheckOut = () => {
                 onChange={(e) => {
                   handleChange("address1", e.target.value);
                 }}
+                isInvalid={invalidForm}
               />
             </Form.Group>
 
@@ -98,6 +102,7 @@ const CheckOut = () => {
                 onChange={(e) => {
                   handleChange("address2", e.target.value);
                 }}
+                isInvalid={invalidForm}
               />
             </Form.Group>
             <Form.Group>
@@ -121,6 +126,11 @@ const CheckOut = () => {
             value="Place order"
             style=" large"
             onClick={() => {
+              if (formData.email === "" || formData.number.length != 10 || formData.address1 === "") {
+                setInvalidForm(true);
+                return;
+              }
+
               let resp = prompt("Please make sure that your details are correct \n" + orderDetails + "\n Type yes(y) to continue");
 
               resp = resp ? resp.trim().toLowerCase() : resp;

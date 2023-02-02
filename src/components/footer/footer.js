@@ -32,15 +32,15 @@ const Footer = () => {
         <div className="footer-content-right">
           <h3>follow us on our social pages</h3>
           <div className="footer-social-icons">
-            <a href="#" className="footer-social-icons-container">
+            <a href="/" className="footer-social-icons-container">
               <AiFillFacebook className="footer-icon " />
               <span>Our Facebook Page</span>
             </a>
-            <a href="#" className="footer-social-icons-container">
+            <a href="/" className="footer-social-icons-container">
               <AiFillLinkedin className="footer-icon " />
               <span>Our LinkedIn Page</span>
             </a>
-            <a href="#" className="footer-social-icons-container">
+            <a href="/" className="footer-social-icons-container">
               <AiFillInstagram className="footer-icon " />
               <span>Our Instagram Page</span>
             </a>
