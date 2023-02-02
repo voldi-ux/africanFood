@@ -23,9 +23,7 @@ const CheckOut = () => {
 
   const dfees = 25; // delivery fees
   const orderDetails = formatData(cartItems, formData, subTotal, dfees, delivering);
-  const submit = () => {
-    console.log(orderDetails);
-  };
+
 
   const handleChange = (name, value) => {
     setFormData((prevState) => {
@@ -125,11 +123,12 @@ const CheckOut = () => {
             onClick={() => {
               let resp = prompt("Please make sure that your details are correct \n" + orderDetails + "\n Type yes(y) to continue");
 
-              resp =  resp ?  resp.trim().toLowerCase() : resp;
+              resp = resp ? resp.trim().toLowerCase() : resp;
 
+              //open the the content in whatsapp
               if (resp === "yes" || resp === "y") {
-                //open the the content in whatsapp
-                console.log(orderDetails);
+                //encodeURI converts the string passed to it to a valid uri string. it replaces all invalid charecters from our string with special charecters that are supposed to in the url ie. \n or space character is replaced with %20
+                window.location.assign(encodeURI(`https://wa.me/${27629114175}/?text=${orderDetails}`));
               }
             }}
           />

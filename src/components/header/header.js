@@ -18,7 +18,8 @@ const MainHeader = () => {
     arrows: false
   };
   const orderBtnClick = () => {
-     window.location.assign("/#foods");
+    const productsCotainer = document.querySelector(".main-products");
+    productsCotainer.scrollIntoView();
   };
 
   return (

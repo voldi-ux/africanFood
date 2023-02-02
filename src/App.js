@@ -6,15 +6,15 @@ import "./utils.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CheckOutPage from "./pages/checkout/checkoutPage";
 
-
-
 function App() {
-
+  console.log(process.env.PUBLIC_URL);
   return (
-    <Router>
+    //process.env.P... will contain the base url
+    // github pages server will set it to /africanFood
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/checkout" component={CheckOutPage} />
-        <Route path="/" component={HomePage} />
+        <Route path={'/'} exact component={HomePage} />
       </Switch>
     </Router>
   );

@@ -30,7 +30,7 @@ const MainNav = () => {
   return (
     <div className="main-nav a-hz  spa fl a-center">
       <div className="nav-left flex a-center ">
-        <span className="flex a-cl a-center" onClick={() => window.location.assign("/")}>
+        <span className="flex a-cl a-center" onClick={() => window.location.reload()}>
           <AiFillHome className="icon" />
           <h4>Home</h4>
         </span>

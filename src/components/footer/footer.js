@@ -14,7 +14,7 @@ const Footer = () => {
           <h3>Contacts</h3>
           <span className="flex a-hz">
             <AiFillMail className="footer-icon  " />
-            <h5>mailVeeEat@gmail.com</h5>
+            <h5>mailafricanfood@gmail.com</h5>
           </span>
           <span className="flex a-hz">
             <AiFillPhone className="footer-icon " />
