@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/africanFood/static/css/main.ea0c59ce.css",
-    "main.js": "/africanFood/static/js/main.d07a47ff.js",
+    "main.css": "/africanFood/static/css/main.f98ee0f1.css",
+    "main.js": "/africanFood/static/js/main.486fc37b.js",
     "static/media/salad (3).png": "/africanFood/static/media/salad (3).6dbe0f83fcde839f2f5e.png",
     "static/media/image (1).jpg": "/africanFood/static/media/image (1).d5985d14bb69124528cd.jpg",
     "static/media/salad (1).jpg": "/africanFood/static/media/salad (1).afeeeead62d7e91c5f45.jpg",
@@ -16,11 +16,11 @@
     "static/media/bike-2.png": "/africanFood/static/media/bike-2.5f1c2d608d104f83d7be.png",
     "static/media/logo.png": "/africanFood/static/media/logo.9261d36dc591fb76f7c4.png",
     "index.html": "/africanFood/index.html",
-    "main.ea0c59ce.css.map": "/africanFood/static/css/main.ea0c59ce.css.map",
-    "main.d07a47ff.js.map": "/africanFood/static/js/main.d07a47ff.js.map"
+    "main.f98ee0f1.css.map": "/africanFood/static/css/main.f98ee0f1.css.map",
+    "main.486fc37b.js.map": "/africanFood/static/js/main.486fc37b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea0c59ce.css",
-    "static/js/main.d07a47ff.js"
+    "static/css/main.f98ee0f1.css",
+    "static/js/main.486fc37b.js"
   ]
 }
